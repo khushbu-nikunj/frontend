@@ -1,27 +1,17 @@
-import React from "react";
-
-//import Msg from "./message/msg";
-//import Navbar from "./Navbar/navbar";
-//import Mobile from "./mobile"
-//import CompA from "./props/compA";
-//import Product from "./State/product";
-//import Salary from "./Event-binding/salary"
-//import  Airtel  from "./Event-Handling/Airtel"
-import Navbar from "./React-Routing/Navbar";
-import Home from "./React-Routing/home";
-import About from "./React-Routing/about";
-import Contact from "./React-Routing/contact";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-function App (){
-    return ( <div>
-        <Router>
-        <Navbar />
-        <Routes>
-            <Route path="/home" element={<Home/>}/>
-            <Route path="/About" element={<About/>}/>
-            <Route path="/Contact" element={<Contact/>}/>
-        </Routes>
-        </Router>
-    </div>)
+import React from 'react'
+//import Message from "./Hooks/Message"
+//import Counter from './Hooks/Counter'
+//import Product from './Hooks/product'
+//import Login from "./Form-handling/Login"
+//import SMS from "./Form-handling/SMS"
+//import Login from './useState-Hook/Login'
+import User from './Axios/User'
+function App() {
+  return (
+    <div>
+        <User/>
+    </div>
+  )
 }
+
 export default App
