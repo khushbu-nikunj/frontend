@@ -5,7 +5,7 @@ export class Salary extends Component {
         emp_sal: 30000,
     };
     btnHandler(value){
-        console.log("reading Button data...", value);
+        //console.log("reading Button data...", value);
         this.setState({
              emp_sal: 30000 + value,
         });
